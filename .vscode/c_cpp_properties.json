@@ -1,26 +1,15 @@
 {
     "configurations": [
         {
-            "name": "ESP-IDF",
-            "compilerPath": "${config:idf.toolsPath}/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
-            "compileCommands": [
-                "${config:idf.buildPath}/compile_commands.json"
-            ],
+            "name": "Linux",
             "includePath": [
-                "${config:idf.espIdfPath}/components/**",
-                "${config:idf.espIdfPathWin}/components/**",
-                "${workspaceFolder}/**",
-                "/home/prabu/esp/v5.4.1/esp-idf/components/log/include",
-                "/home/prabu/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos"
+                "${workspaceFolder}/**"
             ],
-            "browse": {
-                "path": [
-                    "${config:idf.espIdfPath}/components",
-                    "${config:idf.espIdfPathWin}/components",
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
+            "defines": [],
+            "compilerPath": "/usr/bin/clang-16",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64"
         }
     ],
     "version": 4
